@@ -1,0 +1,302 @@
+.taskflow-app {
+    --ion-font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    --ion-background-color: #f4f6f8;
+    --ion-text-color: #243449;
+    --ion-color-primary: #167967;
+    --ion-color-primary-rgb: 22, 121, 103;
+    --ion-color-primary-contrast: #ffffff;
+    --ion-color-primary-contrast-rgb: 255, 255, 255;
+    --ion-color-primary-shade: #136a5b;
+    --ion-color-primary-tint: #2d8676;
+    --ion-color-medium: #66758a;
+    --ion-color-medium-rgb: 102, 117, 138;
+    --ion-color-medium-contrast: #ffffff;
+    --ion-color-medium-contrast-rgb: 255, 255, 255;
+    --ion-color-medium-shade: #5a6779;
+    --ion-color-medium-tint: #758398;
+    --ion-toolbar-background: #ffffff;
+    --ion-item-background: #ffffff;
+    --ion-card-background: #ffffff;
+}
+
+.taskflow-app ion-header {
+    box-shadow: none;
+    border-bottom: 1px solid #e2e8ee;
+}
+
+.taskflow-app ion-toolbar {
+    --min-height: 76px;
+    --padding-start: 8px;
+    --padding-end: 8px;
+}
+
+.taskflow-app ion-title {
+    max-width: 960px;
+    margin-inline: auto;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.taskflow-app ion-content {
+    --background: #f4f6f8;
+    --padding-top: 24px;
+    --padding-bottom: 28px;
+    --padding-start: 20px;
+    --padding-end: 20px;
+}
+
+.task-count {
+    max-width: 880px;
+    margin: 0 auto 18px;
+    color: #66758a;
+    font-size: 14px;
+}
+
+.taskflow-app ion-card {
+    margin: 0 auto 20px;
+    border: 1px solid #e2e8ee;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgb(36 52 73 / 4%);
+}
+
+.taskflow-app .task-card {
+    max-width: 880px;
+    border-inline-start: 4px solid #80b6aa;
+}
+
+.taskflow-app ion-card-header {
+    padding: 22px 24px 12px;
+}
+
+.taskflow-app ion-card-title {
+    color: #243449;
+    font-size: 20px;
+    font-weight: 650;
+    line-height: 1.35;
+    letter-spacing: -0.3px;
+}
+
+.task-card ion-card-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 260px;
+    gap: 12px 24px;
+    padding: 0 24px 24px;
+    color: #66758a;
+}
+
+.task-description {
+    grid-column: 1;
+    align-self: end;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.task-badges {
+    grid-column: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.task-badges ion-badge {
+    --background: #e7f3ef;
+    --color: #216b5c;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.task-badges ion-badge[color='medium'] {
+    --ion-color-base: #edf1f5 !important;
+    --ion-color-contrast: #526277 !important;
+}
+
+.task-completion {
+    grid-column: 1;
+    --background: transparent;
+    --padding-start: 0;
+    --inner-padding-end: 0;
+    --min-height: 44px;
+    color: #526277;
+    font-size: 14px;
+}
+
+.task-completion ion-checkbox {
+    --size: 21px;
+    --border-radius: 6px;
+    --border-color: #a6b4c2;
+    margin: 0;
+}
+
+.task-timer {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    padding: 16px;
+    border: 1px solid #e7ecf1;
+    border-radius: 12px;
+    background: #f7f9fb;
+}
+
+.task-timer h2 {
+    margin: 0 0 10px;
+    color: #243449;
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 28px;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 1px;
+}
+
+.task-timer p {
+    font-size: 12px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.taskflow-app ion-button {
+    --border-radius: 9px;
+    --box-shadow: none;
+    min-height: 42px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.task-timer ion-button {
+    margin: 14px 0 0;
+}
+
+.task-form-card {
+    max-width: 680px;
+}
+
+.task-form-card ion-card-header {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #edf1f5;
+}
+
+.task-form-card ion-card-content {
+    padding: 24px;
+}
+
+.task-form-card ion-item {
+    --background: #f9fafb;
+    --border-color: transparent;
+    --padding-start: 16px;
+    --inner-padding-end: 16px;
+    margin-bottom: 16px;
+    border: 1px solid #dce3ea;
+    border-radius: 10px;
+}
+
+.task-form-card ion-item:focus-within {
+    border-color: #167967;
+    box-shadow: 0 0 0 3px rgb(22 121 103 / 10%);
+}
+
+.task-form-card ion-input,
+.task-form-card ion-textarea,
+.task-form-card ion-select {
+    --padding-top: 12px;
+    --padding-bottom: 12px;
+    --placeholder-color: #7a8797;
+    --placeholder-opacity: 1;
+    min-height: 70px;
+    color: #243449;
+    font-size: 15px;
+}
+
+.task-form-card ion-text[color='danger'] p {
+    margin: -8px 4px 16px;
+    font-size: 13px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid #edf1f5;
+}
+
+.form-actions ion-button {
+    margin: 0;
+}
+
+.taskflow-app ion-tab-bar {
+    --background: #ffffff;
+    --color: #66758a;
+    --color-selected: #167967;
+    min-height: 68px;
+    padding-top: 6px;
+    padding-bottom: max(6px, env(safe-area-inset-bottom));
+    border-top: 1px solid #e2e8ee;
+    box-shadow: 0 -4px 16px rgb(36 52 73 / 3%);
+}
+
+.taskflow-app ion-tab-button {
+    max-width: 160px;
+    --background-focused: #e7f3ef;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
+.taskflow-app ion-tab-button.tab-selected {
+    --background: #edf6f3;
+    border-radius: 10px;
+}
+
+.taskflow-app ion-tab-button ion-icon {
+    margin-bottom: 4px;
+    font-size: 23px;
+}
+
+@media (max-width: 600px) {
+    .taskflow-app ion-toolbar {
+        --min-height: 64px;
+        --padding-start: 0;
+        --padding-end: 0;
+    }
+
+    .taskflow-app ion-title {
+        font-size: 20px;
+    }
+
+    .taskflow-app ion-content {
+        --padding-top: 20px;
+        --padding-start: 16px;
+        --padding-end: 16px;
+    }
+
+    .taskflow-app ion-card-header {
+        padding: 18px 18px 10px;
+    }
+
+    .task-card ion-card-content {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 10px;
+        padding: 0 18px 18px;
+    }
+
+    .task-timer {
+        grid-column: 1;
+        grid-row: auto;
+        padding: 14px;
+    }
+
+    .task-form-card ion-card-header,
+    .task-form-card ion-card-content {
+        padding: 20px;
+    }
+
+    .form-actions ion-button {
+        flex: 1;
+    }
+}
